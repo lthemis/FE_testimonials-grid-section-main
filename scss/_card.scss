@@ -1,0 +1,32 @@
+.card {
+  &--twoColsWide{
+    grid-column: auto / span 2;
+    color: orange;
+  }
+  &--twoRowsLong{
+    @media only screen and (min-width: 1400px) {
+      grid-column: 4/5;
+    }
+    grid-row: auto / span 2;
+  }
+  &--relocated{
+    @media only screen and (min-width: 1400px) {
+      grid-column: 1/2;
+    }
+  }
+  &--violet{
+    background-color: $col-viol;
+  }
+  &--gray-blue{
+     background-color: $col-gray-blue;
+  }
+  &--white{
+    background-color: $col-white;
+  }
+  &--black-blue{
+    background-color: $col-black-blue;
+ }
+  &--white{
+    background-color: $col-white;
+  }
+}

@@ -18,4 +18,63 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: normal;
   line-height: auto;
 }
+
+body {
+  background-color: #cfcfcf;
+}
+
+.testimonials {
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 2rem;
+}
+
+.card--twoColsWide {
+  grid-column: auto / span 2;
+  color: orange;
+}
+
+.card--twoRowsLong {
+  grid-row: auto / span 2;
+}
+
+@media only screen and (min-width: 1400px) {
+  .card--twoRowsLong {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .card--relocated {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+}
+
+.card--violet {
+  background-color: #7541c8;
+}
+
+.card--gray-blue {
+  background-color: #48556a;
+}
+
+.card--white {
+  background-color: white;
+}
+
+.card--black-blue {
+  background-color: #19212e;
+}
+
+.card--white {
+  background-color: white;
+}
 /*# sourceMappingURL=main.css.map */
